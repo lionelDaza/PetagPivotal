@@ -4,16 +4,18 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Clase que se encarga de leer los datos del archivo de configuración requeridos para
+ * la ejecución.
+ */
 public class Environment {
 
     private static final String CONFIG = "gradle.properties";
     private static Environment environment;
     private Properties properties;
 
-
-
     /**
-     * This method read the config property file.
+     * Método que lee el archivo de configuración gradle properties.
      */
     public Environment() {
         try (FileInputStream fileReader = new FileInputStream(CONFIG)) {
@@ -25,9 +27,9 @@ public class Environment {
     }
 
     /**
-     * This method Instance the environment if this does not exist.
+     * Método que instancia la clase si es que esta no no fue instanciada.
      *
-     * @return the instanced Environment.
+     * @return la instancia de la clase Environment.
      */
     public static Environment getInstance() {
         if (environment == null) {
@@ -37,10 +39,10 @@ public class Environment {
     }
 
     /**
-     * Get the properties of the file.
+     * Método que obtiene el contenido del file de configuración.
      *
-     * @param env string name of property setting.
-     * @return String that is a property
+     * @param env string name del archivo de configuracion.
+     * @return String valores del archivo de configuracion.
      */
     public String getEnv(final String env) {
         String property = System.getProperty(env);
@@ -50,13 +52,12 @@ public class Environment {
         return property;
     }
 
-    public String getBaseUrl(){
+    /**
+     * Método que devuelve el url.
+     *
+     * @return String url de la aplicación.
+     */
+    public String getBaseUrl() {
         return getEnv("BaseUrl");
-    }
-    public String user(){
-        return getEnv("user");
-    }
-    public String password(){
-        return getEnv("password");
     }
 }
