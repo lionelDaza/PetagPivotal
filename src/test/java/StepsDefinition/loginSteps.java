@@ -1,5 +1,7 @@
 package StepsDefinition;
 
+import api.Connection;
+import api.RequestManager;
 import pages.HomePage;
 import pages.SignInPage;
 import pages.WelcomePage;
@@ -41,11 +43,16 @@ public class loginSteps {
 
     @Given("The user go to Pivotal web page")
     public void theUserGoToPivotalWebPage() {
-        System.out.println("Vamos a la pagina");
+        System.out.print("Go Pivotal");
     }
 
     @Then("Home page should be displayed")
     public void mainPageShouldBeDisplayed() {
         home.waitHomePage();
+    }
+
+    @Then("Error message should be displayed")
+    public void errorMessageShouldBeDisplayed() {
+        signInPage.errorMessage();
     }
 }

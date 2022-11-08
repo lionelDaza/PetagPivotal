@@ -7,5 +7,5 @@ build/
 #*.iml
 gradlew
 gradlew.bat
-#/cucumber-html-report/
+cucumber-html-report/
 classes

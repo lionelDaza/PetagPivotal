@@ -60,4 +60,29 @@ public class Environment {
     public String getBaseUrl() {
         return getEnv("BaseUrl");
     }
+
+    /**
+     *
+     * @return
+     */
+    public String getToken() {
+        return getEnv("ApiToken");
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String authenticationBaseUri() {
+        return getEnv("authentication.baseURI");
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getTrackerToken(){
+        return getEnv("TrackerToken");
+
+    }
 }
