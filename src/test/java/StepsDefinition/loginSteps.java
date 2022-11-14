@@ -36,11 +36,6 @@ public class loginSteps {
         System.out.println("Login button press");
     }
 
-    @Then("The welcome page should be displayed")
-    public void theWelcomePageShouldBeDisplayed() {
-        System.out.println("Welcome page");
-    }
-
     @Given("The user go to Pivotal web page")
     public void theUserGoToPivotalWebPage() {
         System.out.print("Go Pivotal");

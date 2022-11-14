@@ -85,4 +85,11 @@ public class Environment {
         return getEnv("TrackerToken");
 
     }
+
+    public String getUser(){
+        return getEnv("user");
+    }
+    public String getPassWord(){
+        return getEnv("password");
+    }
 }

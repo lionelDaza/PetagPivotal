@@ -58,4 +58,14 @@ public class SignInPage extends AbstractBasePage  {
                 By.xpath("//*[@id=\"login_type_check_form\"]/div[1]")));
     }
 
+    public HomePage signInSuccessfully(String user, String password){
+        WelcomePage welcomePage = new WelcomePage();
+        welcomePage.clickOnLoginButton();
+        setUserName(user);
+        clickOnNextButton();
+        setPassord(password);
+        clickOnNextButtonAndGoToHomePage();
+        return new HomePage();
+    }
+
 }

@@ -13,4 +13,3 @@ Feature: Web Login
     And The user introduce my user alvarolioneldaza0
     And The user introduce my password wrongPassword
     Then Error message should be displayed
-

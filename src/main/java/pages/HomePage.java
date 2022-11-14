@@ -14,6 +14,9 @@ public class HomePage extends AbstractBasePage{
     public static WebElement profileButton;
     @FindBy(xpath = "//*[@id=\"shared_header\"]/div/div/header/ul/li[3]/div/div/div[2]/div/div/form/button")
     public static  WebElement signOutButton;
+    @FindBy(id = "create-project-button")
+    private WebElement createProjectButton;
+
 
     /**
      * Metodo que espera que la pagina Home sea visible en el Dom.
@@ -35,5 +38,11 @@ public class HomePage extends AbstractBasePage{
         clickOnProfileButton();
         return clickOnSignOutButton();
     }
+
+    public ProjectForm clickOnProjectButton(){
+        createProjectButton.click();
+        return new ProjectForm();
+    }
+
 
 }

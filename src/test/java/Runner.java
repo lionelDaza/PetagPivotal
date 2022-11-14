@@ -1,3 +1,5 @@
+import UI.Driver;
+import io.cucumber.java.AfterAll;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -12,12 +14,12 @@ import utils.Reporting;
 @CucumberOptions(
         monochrome = true,
         plugin = {"pretty",
-                "html:target/test-report.html",
-                "json:target/cucumber.json"
-//                "junit:target/test-report.xml"
+                "html:target/cucumber-report.html",
+                "json:target/cucumber.json",
+                "junit:target/cucumber-report.xml"
         },
         features = {
-                "src/test/resources/features"
+                "src/test/resources/features/"
         },
         glue = {
                 ""
@@ -26,8 +28,11 @@ import utils.Reporting;
 
 
 public class Runner extends AbstractTestNGCucumberTests {
+
         @AfterSuite
         public void generateReport(){
                Reporting.cucumberReport();
+               //Finaliza la instancia del WebDriver
+               Driver.getInstance().getWebDriver().close();
         }
 }

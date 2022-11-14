@@ -21,5 +21,13 @@ public class RequestManager {
                 .get(endPoint);
     }
 
+    public static Response delete(final String endPoint){
+        return given()
+                .spec(requestSpecification)
+                .when()
+                .delete(endPoint);
+
+    }
+
 
 }
