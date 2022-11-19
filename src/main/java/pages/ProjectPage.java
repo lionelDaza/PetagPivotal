@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.junit.Assert.assertEquals;
 
 public class ProjectPage extends AbstractBasePage{
+    ProjectPanel panel = new ProjectPanel();
 
     @FindBy(xpath = "//*[@id=\"view38\"]/div[1]/div/div[1]/header/ul/li[1]/a")
     private WebElement pivotalLogoButton;
@@ -24,6 +25,9 @@ public class ProjectPage extends AbstractBasePage{
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.className("raw_context_name")));
         assertEquals(pivotalLogoProject.getText(),projectName);
+    }
+    public ProjectPanel getPanel(){
+        return panel;
     }
 
 }

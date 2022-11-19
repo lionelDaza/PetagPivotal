@@ -22,10 +22,6 @@ public class ProjectForm extends AbstractBasePage {
     private WebElement publicProjectRadioButton;
 
 
-    //@FindBy(xpath = "//*[@id=\"modal_area\"]/div/div[2]/div/form/div/div/fieldset/div/div[2]/div[1]/div[1]/span[1]")
-    //private WebElement accountDropDownList;
-
-
     public void setProjectName(String projectName){
         newProjectTextField.clear();
         newProjectTextField.sendKeys(projectName);
