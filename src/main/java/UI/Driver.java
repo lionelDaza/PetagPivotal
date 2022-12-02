@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,6 +18,7 @@ public class Driver {
     public Environment env = Environment.getInstance();
     public WebDriver driver;
     public WebDriverWait wait;
+    public Actions actions;
 
     /**
      * Constructor.
@@ -28,6 +30,7 @@ public class Driver {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(env.getBaseUrl());
         wait = new WebDriverWait(driver, 10);
+        actions = new Actions(driver);
     }
 
     /**
@@ -49,6 +52,10 @@ public class Driver {
      */
     public WebDriver getWebDriver() {
         return driver;
+    }
+
+    public Actions getWebDriverActions() {
+        return actions;
     }
 
 }

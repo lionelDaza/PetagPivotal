@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Tag: @goToHomePage</title>
+<title>Cucumber Reports (no 1) - Feature: story</title>
 
 </head>
 <body>
@@ -52,7 +52,7 @@ $(document).ready(function() {
       <p class="navbar-text navbar-left">Cucumber Report</p>
       <ul class="nav navbar-nav navbar-right">
           <li role="presentation"><a href="../">Jenkins</a></li>
-          <li role="presentation"><a href="../../lastCompletedBuild/cucumber-html-reports/report-tag_554144496.html">Latest results</a></li>
+          <li role="presentation"><a href="../../lastCompletedBuild/cucumber-html-reports/report-feature_3_1988957749.html">Latest results</a></li>
         <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Tag Report</h2>
+    <h2>Feature Report</h2>
   </div>
 </div>
 
@@ -110,7 +110,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Tag</th>
+    <th>Feature</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -130,7 +130,7 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@goToHomePage</td>
+          <td class="tagname">story</td>
           <td      class="passed"    >12</td>
           <td >0</td>
           <td >0</td>
@@ -138,11 +138,11 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">12</td>
 
-          <td  class="passed"    >2</td>
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td class="total">1</td>
 
-          <td class="duration" data-value="6709187600">6.709</td>
+          <td class="duration" data-value="4069978500">4.069</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -169,32 +169,38 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="elements">
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_15949335.html">Project</a>
-    </div>
-
+      <div class="feature">
 
 <div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2032518735.html">@deleteAllProjects</a>
-       <a href="report-tag_2416095055.html">@LoginSuccessfully</a>
-       <a href="report-tag_554144496.html">@goToHomePage</a>
 </div>
 
 
-  <span class="lead-duration duration">3.732</span>
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">story</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.270</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify that it is possible to create a Private and Public project</span>
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -206,59 +212,11 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-2" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">projectHooks.LoginHooks.logInSuccessfully()</span>
-
-  <span class="lead-duration duration">2.184</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">projectHooks.ProjectHooks.deleteAllProject()</span>
-
-  <span class="lead-duration duration">1.894</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -270,7 +228,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -278,7 +236,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">The user click on new project button</span>
 
-  <span class="lead-duration duration">0.081</span>
+  <span class="lead-duration duration">0.063</span>
 
 </div>
 
@@ -305,7 +263,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Introduce a new project name <span class="argument">PrivateProject</span></span>
 
-  <span class="lead-duration duration">0.107</span>
+  <span class="lead-duration duration">0.112</span>
 
 </div>
 
@@ -332,7 +290,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Choose a the account <span class="argument">Ptag</span></span>
 
-  <span class="lead-duration duration">0.180</span>
+  <span class="lead-duration duration">0.171</span>
 
 </div>
 
@@ -359,7 +317,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Choose the type as <span class="argument">private</span></span>
 
-  <span class="lead-duration duration">0.060</span>
+  <span class="lead-duration duration">0.048</span>
 
 </div>
 
@@ -386,7 +344,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">click on create project button</span>
 
-  <span class="lead-duration duration">0.058</span>
+  <span class="lead-duration duration">0.057</span>
 
 </div>
 
@@ -413,7 +371,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">A new project <span class="argument">PrivateProject</span> should be created</span>
 
-  <span class="lead-duration duration">3.243</span>
+  <span class="lead-duration duration">1.815</span>
 
 </div>
 
@@ -439,66 +397,30 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-4" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">projectHooks.ProjectHooks.goToHomePage()</span>
-
-  <span class="lead-duration duration">0.853</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
   </div>
 </div>
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_15949335.html">Project</a>
-    </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2032518735.html">@deleteAllProjects</a>
        <a href="report-tag_2416095055.html">@LoginSuccessfully</a>
-       <a href="report-tag_554144496.html">@goToHomePage</a>
+       <a href="report-tag_2032518735.html">@deleteAllProjects</a>
+       <a href="report-tag_4145877837.html">@goToWelcomePage</a>
 </div>
 
 
-  <span class="lead-duration duration">2.976</span>
+  <span class="lead-duration duration">1.799</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify that it is possible to create a Private and Public project</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify that it is possible to add user stories in the Icebox of a project</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -507,11 +429,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -523,13 +445,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">projectHooks.LoginHooks.logInSuccessfully()</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -545,7 +467,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">projectHooks.ProjectHooks.deleteAllProject()</span>
 
-  <span class="lead-duration duration">0.825</span>
+  <span class="lead-duration duration">0.698</span>
 
           </div>
 
@@ -562,7 +484,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -574,42 +496,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">The user click on new project button</span>
+  <span class="name">I click on <span class="argument">Icebox</span> option</span>
 
-  <span class="lead-duration duration">0.070</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Introduce a new project name <span class="argument">PublicProject</span></span>
-
-  <span class="lead-duration duration">0.104</span>
+  <span class="lead-duration duration">0.482</span>
 
 </div>
 
@@ -634,36 +529,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Choose a the account <span class="argument">Ptag</span></span>
+  <span class="name">I click on a new story button</span>
 
-  <span class="lead-duration duration">0.185</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Choose the type as <span class="argument">public</span></span>
-
-  <span class="lead-duration duration">0.062</span>
+  <span class="lead-duration duration">0.133</span>
 
 </div>
 
@@ -688,9 +556,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">click on create project button</span>
+  <span class="name">I introduce the story name <span class="argument">storyPetag</span></span>
 
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.244</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I introduce the story description Story <span class="argument">Petag Story Description</span></span>
+
+  <span class="lead-duration duration">0.789</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on save story button</span>
+
+  <span class="lead-duration duration">0.118</span>
 
 </div>
 
@@ -715,9 +637,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">A new project <span class="argument">PublicProject</span> should be created</span>
+  <span class="name">A new story named <span class="argument">storyPetag</span> should be displayed</span>
 
-  <span class="lead-duration duration">2.496</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -744,7 +666,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -756,13 +678,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">projectHooks.ProjectHooks.goToHomePage()</span>
+              <span class="location name">projectHooks.ProjectHooks.goToWelcomePage()</span>
 
-  <span class="lead-duration duration">1.038</span>
+  <span class="lead-duration duration">9.664</span>
 
           </div>
 
@@ -779,6 +701,7 @@ $(document).ready(function() {
   </div>
 </div>
 
+        </div>
 
       </div>
     </div>

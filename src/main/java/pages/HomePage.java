@@ -17,7 +17,6 @@ public class HomePage extends AbstractBasePage{
     @FindBy(id = "create-project-button")
     private WebElement createProjectButton;
 
-
     /**
      * Metodo que espera que la pagina Home sea visible en el Dom.
      */

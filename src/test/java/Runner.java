@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 import org.testng.annotations.AfterSuite;
 import utils.Reporting;
 
+import java.util.Locale;
+
 /**
  * Clase que ejecutara los Features.
  */
@@ -16,14 +18,10 @@ import utils.Reporting;
         plugin = {"pretty",
                 "html:target/cucumber-report.html",
                 "json:target/cucumber.json",
-                "junit:target/cucumber-report.xml"
-        },
-        features = {
-                "src/test/resources/features/"
-        },
-        glue = {
-                ""
-        }
+                "junit:target/cucumber-report.xml"},
+        features = {"src/test/resources/features"},
+        glue = {""}
+//        tags = ("@Login or @Project or @Epic")
 )
 
 

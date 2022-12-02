@@ -4,9 +4,6 @@ import UI.Driver;
 import UI.Environment;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.AbstractBasePage;
 import pages.HomePage;
 import pages.SignInPage;
 
@@ -17,7 +14,7 @@ public class LoginHooks {
         HomePage.signOut();
     }
 
-    @Before("@LoginSuccessfully")
+    @Before(value="@LoginSuccessfully", order=0)
     public void  logInSuccessfully(){
         String currentUrl = Driver.getInstance().getWebDriver().getCurrentUrl();
         if ("https://www.pivotaltracker.com/dashboard".equals(currentUrl)) {

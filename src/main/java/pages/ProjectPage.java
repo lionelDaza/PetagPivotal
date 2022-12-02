@@ -18,6 +18,7 @@ public class ProjectPage extends AbstractBasePage{
 
     public HomePage clickOnPivotalLogo(){
         pivotalLogoButton.click();
+
         return new HomePage();
     }
 

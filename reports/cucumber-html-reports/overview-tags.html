@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@LogOut",  "@LoginSuccessfully",  "@deleteAllProjects",  "@goToHomePage", ] ,
+        labels:  [ "@LogOut",  "@LoginSuccessfully",  "@deleteAllProjects",  "@goToHomePage",  "@goToWelcomePage", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00, ] 
+                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -137,7 +137,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>PtagProject</td>
         <td>1</td>
-      <td>14 Nov 2022, 02:18</td>
+      <td>28 Nov 2022, 01:08</td>
     </tr>
   </tbody>
 </table>
@@ -212,41 +212,41 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="12858178900">12.858</td>
+        <td class="duration" data-value="9932931400">9.932</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2416095055.html">@LoginSuccessfully</a></td>
 
-        <td      class="passed"    >6</td>
+        <td      class="passed"    >38</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
+        <td >0</td>
+        <td class="total">38</td>
+
+        <td  class="passed"    >6</td>
         <td >0</td>
         <td class="total">6</td>
 
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="4054727600">4.054</td>
+        <td class="duration" data-value="13964688800">13.964</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2032518735.html">@deleteAllProjects</a></td>
 
-        <td      class="passed"    >12</td>
+        <td      class="passed"    >38</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">12</td>
+        <td class="total">38</td>
 
-        <td  class="passed"    >2</td>
+        <td  class="passed"    >6</td>
         <td >0</td>
-        <td class="total">2</td>
+        <td class="total">6</td>
 
-        <td class="duration" data-value="6922697800">6.922</td>
+        <td class="duration" data-value="13964688800">13.964</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -263,7 +263,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="6922697800">6.922</td>
+        <td class="duration" data-value="6709187600">6.709</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_4145877837.html">@goToWelcomePage</a></td>
+
+        <td      class="passed"    >26</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">26</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="7255501200">7.255</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -271,19 +288,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>35</td>
+      <td>119</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>35</td>
+      <td>119</td>
 
-      <td>6</td>
+      <td>19</td>
       <td>0</td>
-      <td>6</td>
+      <td>19</td>
 
-      <td class="duration">30.758</td>
-      <td>4</td>
+      <td class="duration">51.826</td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>

@@ -24,7 +24,6 @@ public class projectSteps {
     @And("^Choose a the account (.*)$")
     public void chooseATheAccountPtag(String accountName) {
         projectForm.chooseAccount(accountName);
-
     }
 
     @And("^Choose the type as (.*)$")
@@ -33,8 +32,7 @@ public class projectSteps {
     }
 
     @And("click on create project button")
-    public void clickOnCreateProjectButton() {
-        projectPage = projectForm.clickOnCreateProject();
+    public void clickOnCreateProjectButton() {projectPage = projectForm.clickOnCreateProject();
     }
 
     @Then("^A new project (.*) should be created$")
