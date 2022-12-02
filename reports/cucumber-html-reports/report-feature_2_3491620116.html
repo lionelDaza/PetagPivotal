@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>PtagProject</td>
         <td>1</td>
-      <td>28 Nov 2022, 01:08</td>
+      <td>02 Dec 2022, 18:55</td>
     </tr>
   </tbody>
 </table>
@@ -131,19 +131,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Epic</td>
-          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
+          <td     class="skipped"   >11</td>
           <td >0</td>
           <td >0</td>
           <td class="total">11</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="3696536200">3.696</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1953300">0.001</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Epic</span>
 
@@ -193,7 +193,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.507</span>
+  <span class="lead-duration duration">0.000</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,11 +232,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">The user click on new project button</span>
 
-  <span class="lead-duration duration">0.061</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -259,11 +259,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Introduce a new project name <span class="argument">PrivateProject</span></span>
 
-  <span class="lead-duration duration">0.100</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -286,11 +286,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Choose a the account <span class="argument">Ptag</span></span>
 
-  <span class="lead-duration duration">0.191</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -313,11 +313,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Choose the type as <span class="argument">private</span></span>
 
-  <span class="lead-duration duration">0.073</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -340,11 +340,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">click on create project button</span>
 
-  <span class="lead-duration duration">0.053</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -367,11 +367,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">A new project <span class="argument">PrivateProject</span> should be created</span>
 
-  <span class="lead-duration duration">2.026</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -413,12 +413,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.189</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create Epic</span>
 
@@ -429,13 +429,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -445,17 +445,47 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-4" class="inner-level collapse collapsable-details ">
+    <div id="before-4" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">Before</span>
               <span class="location name">projectHooks.LoginHooks.logInSuccessfully()</span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.009</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADAZAQ-DH01', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ALVARO~1.DAZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bceb22b5f417b840ffda54d494721e2f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
+	at projectHooks.LoginHooks.logInSuccessfully(LoginHooks.java:19)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -467,7 +497,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">projectHooks.ProjectHooks.deleteAllProject()</span>
 
-  <span class="lead-duration duration">0.714</span>
+  <span class="lead-duration duration">0.307</span>
 
           </div>
 
@@ -484,7 +514,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -496,15 +526,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">I click on <span class="argument">Epics</span> option</span>
 
-  <span class="lead-duration duration">0.757</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -527,11 +557,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I click on a new epic button</span>
 
-  <span class="lead-duration duration">0.149</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -554,11 +584,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I introduce the Epic name <span class="argument">EpicPetag</span></span>
 
-  <span class="lead-duration duration">0.139</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -581,11 +611,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I click on save epic button</span>
 
-  <span class="lead-duration duration">0.089</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -608,11 +638,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">The <span class="argument">EpicPetag</span> should be displayed</span>
 
-  <span class="lead-duration duration">0.053</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -639,9 +669,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -651,17 +681,46 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">projectHooks.ProjectHooks.goToWelcomePage()</span>
 
-  <span class="lead-duration duration">9.158</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>Error message</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADAZAQ-DH01', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ALVARO~1.DAZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bceb22b5f417b840ffda54d494721e2f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at projectHooks.ProjectHooks.goToWelcomePage(ProjectHooks.java:35)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 

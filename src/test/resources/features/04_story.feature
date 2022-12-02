@@ -28,7 +28,7 @@ Feature: Story
     And I introduce the story name storyPetagToBacklog
     And I introduce the story description Story Petag Story Description
     And I click on save story button
-    And A new story named storyPetag should be displayed
+    And A new story named storyPetagToBacklog should be displayed
     And In IceBox I set 2 points for the story
     And In Icebox I click on start story
     And I click on Current/backlog option

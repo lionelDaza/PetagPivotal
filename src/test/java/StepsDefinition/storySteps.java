@@ -48,9 +48,14 @@ public class storySteps {
 
     }
 
-    @Then("In Backlog the Story: (.*) should be displayed")
+    @Then("^In Backlog the Story: (.*) should be displayed")
     public void inBacklogTheStoryStoryPetagToBacklogShouldBeDisplayed(String storyName) {
-        backlogForm = new BacklogForm();
         backlogForm.verifyStoryCreated(storyName);
+    }
+
+    @Then("^(.*) story should be displayed in Icebox panel")
+    public void backlogstorypetagStoryShouldBeDisplayedInIceboxPanel(String storyName) {
+        storyForm = new StoryForm();
+        storyForm.verifyStoryCreation("Copy of - "+storyName);
     }
 }
