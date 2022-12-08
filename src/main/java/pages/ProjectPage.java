@@ -7,6 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static org.junit.Assert.assertEquals;
 
+/***
+ * Clase que representa la pagina del proyecto.
+ */
 public class ProjectPage extends AbstractBasePage{
     ProjectPanel panel = new ProjectPanel();
 
@@ -15,18 +18,29 @@ public class ProjectPage extends AbstractBasePage{
     @FindBy(className = "raw_context_name")
     private WebElement pivotalLogoProject;
 
-
+    /***
+     * Metodo que presiona el boton del logo de pivotal tracker.
+     * @return  HomePage la pagina inicial.
+     */
     public HomePage clickOnPivotalLogo(){
         pivotalLogoButton.click();
-
         return new HomePage();
     }
 
+    /***
+     * Metodo para verificar y esperar que el proyecto este creado.
+     * @param projectName   String nombre del proyecto
+     */
     public void waitProjectPage(String projectName){
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.className("raw_context_name")));
         assertEquals(pivotalLogoProject.getText(),projectName);
     }
+
+    /***
+     * Metodo que retorna el panel del proyecto.
+     * @return  ProjectPanel panel de opciones del proyecto.
+     */
     public ProjectPanel getPanel(){
         return panel;
     }

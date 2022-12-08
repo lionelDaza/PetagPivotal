@@ -23,8 +23,8 @@ public class ProjectHooks {
         for (Map<String, ?> object : projects) {
             RequestManager.delete(PROJECTS_ENDPOINT + object.get(ID_KEY).toString());
         }
-
     }
+
     @After("@goToHomePage")
     public void goToHomePage(){
         projectPage.clickOnPivotalLogo();

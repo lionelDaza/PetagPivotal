@@ -11,8 +11,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/***
+ * Clase para configurar el reporte cucumber.
+ */
 public class Reporting {
-
+    /***
+     * Método para la configuración del formato del reporte
+     */
     public static void cucumberReport(){
         File reportOutputDirectory = new File("reports");
         List<String> jsonFiles = new ArrayList<>();
@@ -31,12 +36,6 @@ public class Reporting {
         configuration.addClassifications("Platform", "Windows");
         configuration.addClassifications("Browser", "Chrome");
         configuration.addClassifications("Branch", "release/1.0");
-
-// optionally add metadata presented on main page via properties file
-//        List<String> classificationFiles = new ArrayList<>();
-//        classificationFiles.add("properties-1.properties");
-//        classificationFiles.add("properties-2.properties");
-//        configuration.addClassificationFiles(classificationFiles);
 
 // optionally specify qualifiers for each of the report json files
         configuration.addPresentationModes(PresentationMode.PARALLEL_TESTING);

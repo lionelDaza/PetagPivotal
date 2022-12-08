@@ -18,26 +18,42 @@ public class HomePage extends AbstractBasePage{
     private WebElement createProjectButton;
 
     /**
-     * Metodo que espera que la pagina Home sea visible en el Dom.
+     * Método que espera que la pagina Home sea visible en el Dom.
      */
     public void waitHomePage(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//*[@id=\"shared_header\"]/div/div/header/ul/li[2]/div/button")));
     }
+
+    /***
+     * Método para hacer click en el boton de profile.
+     */
     public static void clickOnProfileButton(){
         profileButton.click();
     }
 
+    /***
+     * Método para hacer click en el boton de logout.
+     * @return  SignInPage pagina de acceso.
+     */
     public static SignInPage clickOnSignOutButton(){
         signOutButton.click();
         return new SignInPage();
     }
 
+    /***
+     * Metodo que engloba el proceso de cerrar sesion.
+     * @return  SignInPage pagina de acceso.
+     */
     public static SignInPage signOut(){
         clickOnProfileButton();
         return clickOnSignOutButton();
     }
 
+    /***
+     * Método para hacer click en el boton de creacion de proyecto.
+     * @return  ProjectForm clase del formulario creacion del proyecto.
+     */
     public ProjectForm clickOnProjectButton(){
         createProjectButton.click();
         return new ProjectForm();

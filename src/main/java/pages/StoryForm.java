@@ -23,48 +23,67 @@ public class StoryForm extends AbstractBasePage{
     @FindBy(css= "button[data-aid=\"save\"]")
     private WebElement clickOnSaveDescriptionButton;
 
-    //    test
-    @FindBy(xpath = " //*[@id=\"view150\"]")
-    private WebElement currentBacklog;
-    @FindBy(css= " div[class =\"tn-panel__loom\"] div[data-cid=\"c203")
-    private WebElement storyInListToDrag;
-    @FindBy(xpath= "//*[@id=\"view183\"]/div/div[1]/header/div/div/span[1]")
-    private WebElement storyInListToDragText;
     @FindBy(css= "div[data-type=\"icebox\"] div.StoryPreviewItem__clickToExpand button[class=\"state button start\"")
     private WebElement startStoryButton;
 
-
+    /**
+     * Método que presiona el boton de agregar story en el IceBox.
+     */
     public void clickOnAddStoryIceBox(){
         addStoryIceBoxButton.click();
     }
 
+    /***
+     * Método para agregar el nombre de la story.
+     * @param storyTitle    String nombre de la story.
+     */
     public void setStoryTitle(String storyTitle){
         storyTitleTextField.clear();
         storyTitleTextField.sendKeys(storyTitle);
     }
 
+    /***
+     * Método que presiona el boton de salvar story.
+     */
     public void clickOnSaveStoryIceBox(){
         saveStoryButton.click();
     }
+
+    /***
+     * Método que verifica que la story haya sido creada como se espera.
+     * @param storyName String nombre de la story.
+     */
     public void verifyStoryCreation(String storyName) {
         assertEquals(storyInList.getText(),storyName);
-//        actions.dragAndDrop(storyInList,currentBacklog);
-//        actions.dragAndDrop(storyInListToDragText,currentBacklog);
-
     }
+
+    /***
+     * Método que presiona en el are de descripción de la story.
+     */
     public void clickOnStoryDescription() {
         descriptionArea.click();
     }
 
+    /***
+     * Método para agregar el texto de la descripción del proyecto.
+     * @param storyDescription  String descripción del proyecto.
+     */
     public void addTextInToStoryDescriptionTextArea(String storyDescription) {
         descriptionAreaTextArea.clear();
         descriptionAreaTextArea.sendKeys(storyDescription);
     }
 
+    /***
+     * Método que presiona el boton de salvar la descripción del proyecto
+     */
     public void clickOnsaveStoryDescription() {
         clickOnSaveDescriptionButton.click();
     }
 
+    /***
+     * Método para agregar los puntos del story.
+     * @param storyPoints   String puntuación de la story(1,2,3...)
+     */
     public void setStoryPoints(String storyPoints) {
         String locator;
         locator = String.format("div[data-type=\"icebox\"] div.StoryPreviewItem__clickToExpand button[data-point-value=\"%s\"]",storyPoints);
@@ -72,6 +91,9 @@ public class StoryForm extends AbstractBasePage{
         pointsButton.click();
     }
 
+    /***
+     * Método para presionar el boton de empezar la story.
+     */
     public void clickOnStartStory() {
         startStoryButton.click();
     }

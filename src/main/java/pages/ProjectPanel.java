@@ -6,12 +6,19 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
+/***
+ * clase que representa el panel de opciones dentro del proyecto.
+ */
 public class ProjectPanel extends AbstractBasePage{
 
     @FindBy(css = ".add_epic span")
     private WebElement createEpicButton;
 
-
+    /***
+     * Método que busca y presiona la opcion del panel requerida.
+     * @param option    String nombre del boton del panel del proyecto.
+     * @return WebElement que representa el objeto del panel requerido.
+     */
     public WebElement clickOnPanelOption(String option){
         WebElement panel = isPanelDisplayed(option);
         if (panel == null ){
@@ -29,6 +36,11 @@ public class ProjectPanel extends AbstractBasePage{
         return isPanelDisplayed(option);
     }
 
+    /***
+     * Verifica si el formulario de la opcion requerida del panel se muestra en la pagina proyecto.
+     * @param option    String nombre del boton en el panel del proyecto.
+     * @return  WebElement retorna el panel requerido.
+     */
     public WebElement isPanelDisplayed(String option){
         WebElement panelType =  null;
         List<WebElement> panelContainer = driver.findElements(By.xpath("//*[@id=\"view38\"]/section[1]/article/section/div/div"));

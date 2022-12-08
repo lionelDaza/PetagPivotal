@@ -1,5 +1,5 @@
 import UI.Driver;
-import io.cucumber.java.AfterAll;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -7,7 +7,6 @@ import org.junit.runner.RunWith;
 import org.testng.annotations.AfterSuite;
 import utils.Reporting;
 
-import java.util.Locale;
 
 /**
  * Clase que ejecutara los Features.
@@ -21,7 +20,6 @@ import java.util.Locale;
                 "junit:target/cucumber-report.xml"},
         features = {"src/test/resources/features"},
         glue = {""}
-//        tags = ("@Login or @Project or @Epic")
 )
 
 

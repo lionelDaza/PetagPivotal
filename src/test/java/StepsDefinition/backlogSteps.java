@@ -63,7 +63,7 @@ public class backlogSteps {
 
     @And("I click on delete icon")
     public void iClickOnDeleteIcon() {
-        backlogForm.clickOnDeleteBsketButton();
+        backlogForm.clickOnDeleteBasketButton();
         deleteContainer = new DeleteContainer();
         deleteContainer.clickOnDeleteButton();
     }

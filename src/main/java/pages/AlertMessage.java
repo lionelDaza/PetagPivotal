@@ -3,6 +3,9 @@ package pages;
 import UI.Driver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+/***
+ *
+ */
 public class AlertMessage extends AbstractBasePage {
     public void clickOKAlertMessage() {
         try {

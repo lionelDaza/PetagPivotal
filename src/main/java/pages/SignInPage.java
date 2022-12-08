@@ -15,7 +15,7 @@ public class SignInPage extends AbstractBasePage  {
     @FindBy(id = "credentials_password")
     private WebElement passwordTextField;
     @FindBy(name = "action")
-    private WebElement nextSigninButton;
+    private WebElement nextSignInButton;
     @FindBy(xpath = "//*[@id=\"login_type_check_form\"]/div[1]")
     private WebElement errorLoginMessage;
 
@@ -42,22 +42,32 @@ public class SignInPage extends AbstractBasePage  {
      * Método que presiona el boton de login.
      */
     public void clickOnNextButton(){
-        nextSigninButton.click();
+        nextSignInButton.click();
     }
 
     /**
      * Método que presiona el boton de login.
      */
     public HomePage clickOnNextButtonAndGoToHomePage(){
-        nextSigninButton.click();
+        nextSignInButton.click();
         return new HomePage();
     }
 
+    /***
+     * Verifica que el mensaje de error este presenta al introducir datos erróneos en el
+     * acceso a la app.
+     */
     public void errorMessage(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//*[@id=\"login_type_check_form\"]/div[1]")));
     }
 
+    /***
+     * Metodo que engloba el proceso de acceso exitoso.
+     * @param user  String nombre de usuario.
+     * @param password  String pass del usuario.
+     * @return  HomePage que es la pagina de inicio de la aplicacion.
+     */
     public HomePage signInSuccessfully(String user, String password){
         WelcomePage welcomePage = new WelcomePage();
         welcomePage.clickOnLoginButton();

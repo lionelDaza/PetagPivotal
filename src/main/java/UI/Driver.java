@@ -54,6 +54,10 @@ public class Driver {
         return driver;
     }
 
+    /***
+     * Metodo que devuelve la instancia de las acciones del web driver.
+     * @return  Actions acciones del driver.
+     */
     public Actions getWebDriverActions() {
         return actions;
     }

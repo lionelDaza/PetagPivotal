@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Clase Abstracta que hereda el Driver a a las Paginas.
+ * Clase Abstracta para la configuración del Web driver.
  */
 public abstract class AbstractBasePage {
 
