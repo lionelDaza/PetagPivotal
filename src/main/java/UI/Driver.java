@@ -1,11 +1,8 @@
 package UI;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
@@ -24,8 +21,10 @@ public class Driver {
      * Constructor.
      */
     public Driver() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        DriverFactory driverFactory = new DriverFactory();
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
+        driver = driverFactory.getDriver(env.getEnv("Browser"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(env.getBaseUrl());
