@@ -2,9 +2,11 @@ import UI.Driver;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-import org.testng.annotations.AfterSuite;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import projectHooks.LoginHooks;
 import utils.Reporting;
 
 
@@ -18,17 +20,20 @@ import utils.Reporting;
                 "html:target/cucumber-report.html",
                 "json:target/cucumber.json",
                 "junit:target/cucumber-report.xml"},
-        features = {"src/test/resources/features"},
+        features = {"src/test/resources/features/01_login.feature"},
         glue = {""}
 )
 
 
-public class Runner extends AbstractTestNGCucumberTests {
+public class Runner {
+    static Logger logger = LoggerFactory.getLogger(LoginHooks.class);
 
-        @AfterSuite
-        public void generateReport(){
-               Reporting.cucumberReport();
-               //Finaliza la instancia del WebDriver
-               Driver.getInstance().getWebDriver().close();
+        @AfterClass
+        public static void generateReport(){
+            logger.info("Creando Reporte Cucumber");
+            Reporting.cucumberReport();
+            //Finaliza la instancia del WebDriver
+            logger.info("Cerrando Web Driver");
+            Driver.getInstance().getWebDriver().close();
         }
 }
