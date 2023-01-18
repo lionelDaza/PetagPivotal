@@ -60,4 +60,45 @@ public class Environment {
     public String getBaseUrl() {
         return getEnv("BaseUrl");
     }
+
+    /**
+     * Método que devuelve el valor de ApiToken de las variables de configuración.
+     * @return  String api token del usuario.
+     */
+    public String getToken() {
+        return getEnv("ApiToken");
+    }
+
+    /**
+     * Método que devuelve el valor de Base uri de las variables de configuración.
+     * @return  String base uri de la aplicación.
+     */
+    public String authenticationBaseUri() {
+        return getEnv("authentication.baseURI");
+    }
+
+    /**
+     * Método que devuelve el valor de tracker token de las variables de configuración.
+     * @return  String tracker token de la aplicación.
+     */
+    public String getTrackerToken(){
+        return getEnv("TrackerToken");
+
+    }
+
+    /***
+     *  Método que devuelve el nombre de usuario  de las variables de configuración.
+     * @return  String nombre de usuario.
+     */
+    public String getUser(){
+        return getEnv("user");
+    }
+
+    /***
+     * Método que devuelve el password de usuario  de las variables de configuración.
+     * @return  String password de usuario.
+     */
+    public String getPassWord(){
+        return getEnv("password");
+    }
 }

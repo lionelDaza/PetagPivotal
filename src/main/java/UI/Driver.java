@@ -1,9 +1,11 @@
 package UI;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,21 +13,24 @@ import java.util.concurrent.TimeUnit;
  * Clase que inicializa y configura el web driver que se usara de acuerdo al navegador.
  */
 public class Driver {
+    static Logger logger = LoggerFactory.getLogger(Driver.class);
     public static Driver driverInstance = null;
     public Environment env = Environment.getInstance();
     public WebDriver driver;
     public WebDriverWait wait;
+    public Actions actions;
 
     /**
      * Constructor.
      */
     public Driver() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        DriverFactory driverFactory = new DriverFactory();
+        driver = driverFactory.getDriver(env.getEnv("Browser"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(env.getBaseUrl());
         wait = new WebDriverWait(driver, 10);
+        actions = new Actions(driver);
     }
 
     /**
@@ -36,6 +41,7 @@ public class Driver {
     public static Driver getInstance() {
         if (driverInstance == null) {
             driverInstance = new Driver();
+            logger.debug("WebDriver Instance"+driverInstance);
         }
         return driverInstance;
     }
@@ -48,4 +54,13 @@ public class Driver {
     public WebDriver getWebDriver() {
         return driver;
     }
+
+    /***
+     * Metodo que devuelve la instancia de las acciones del web driver.
+     * @return  Actions acciones del driver.
+     */
+    public Actions getWebDriverActions() {
+        return actions;
+    }
+
 }
